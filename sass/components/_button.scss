@@ -1,21 +1,27 @@
 .btn {
   &:link,
   &:visited {
-  padding: 1rem 1.2rem;
-  background-color: #053d75;
+
+  padding: 1rem 2rem;
+  background-color: #e88d9f;
+  letter-spacing: 0.3rem;
   border-radius: 3rem;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 900;
   color: white;
+  //color: #053d75;
   position: absolute;
-  top: 15rem;
-  left: 50%;
+  top: 120%;
+  left: 30%;
+
 }
  &:hover{
-  background-color: white;
-  color: #053d75;
-  font-weight:bold;
-  padding: 1.2rem 1.5rem;
+  background-color: #e88d9f;
+  color: white;
+  font-weight: 900;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.8rem;
+
  }
 
 

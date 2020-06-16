@@ -4,18 +4,21 @@
 background-image: url(../img/cover.jpeg);
   background-size: cover;
   background-position: center; /*no matter viewportsize, top of the image stays on top of the cointainer*/
-  //clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  //clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
   position: relative; /* parent elemnent to the logo-box, reference point*/
 
   &__logo-box {  /*copies all the code in the header and adds logo-box = nesting*/
     position: absolute; /* in reference to header*/
-    top: 50%; /* in reference to header*/
-    left: 50%;
+    top: 65%; /* in reference to header*/
+    left: 1%;
   }
 
   &__logo {
-  height: 6rem;
+  height: 20rem;
   margin: 1rem;
+  opacity: 0.6;
+
+
 
   }
 

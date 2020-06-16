@@ -20,11 +20,11 @@ body {
   font-size: 1.5rem;
   /*16px*/
   line-height: 1.7;
-  padding: 3rem;
-  /*30px*/
+  position: relative;
   box-sizing: border-box;
   /* margins and padding are not added to the width and hight of the box,
-                             but included in the width and height */ }
+                             but included in the width and height */
+  background-color: #eaeeef; }
 
 .heading-primary {
   color: white;
@@ -58,21 +58,23 @@ body {
   margin-top: 5rem; }
 
 .btn:link, .btn:visited {
-  padding: 1rem 1.2rem;
-  background-color: white;
+  padding: 1rem 2rem;
+  background-color: #e88d9f;
+  letter-spacing: 0.3rem;
   border-radius: 3rem;
   text-decoration: none;
-  font-weight: bold;
-  color: black;
+  font-weight: 900;
+  color: white;
   position: absolute;
-  top: 15rem;
-  left: 50%; }
+  top: 120%;
+  left: 30%; }
 
 .btn:hover {
-  background-color: #053d75;
+  background-color: #e88d9f;
   color: white;
-  font-weight: bold;
-  padding: 1.2rem 1.5rem; }
+  font-weight: 900;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.8rem; }
 
 .header {
   height: 50vh;
@@ -86,12 +88,13 @@ body {
     /*copies all the code in the header and adds logo-box = nesting*/
     position: absolute;
     /* in reference to header*/
-    top: 50%;
+    top: 65%;
     /* in reference to header*/
-    left: 50%; }
+    left: 1%; }
   .header__logo {
-    height: 6rem;
-    margin: 1rem; }
+    height: 20rem;
+    margin: 1rem;
+    opacity: 0.6; }
   .header__text-box {
     position: absolute;
     top: 40%;

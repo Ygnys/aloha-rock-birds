@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit; /*every element on tge page will inherit this proprety*/
-  }
+}
 
 html{
   /*font-size: 10px;*/ /* setting the root font size to 10 instead 16 makes calculations easier*/
@@ -19,10 +19,11 @@ body {
   font-weight: 400;
   font-size: 1.5rem; /*16px*/
   line-height: 1.7;
+  position: relative;
 
   // color: white;
-  padding: 3rem; /*30px*/
+  // padding: 3rem; /*30px*/
   box-sizing: border-box; /* margins and padding are not added to the width and hight of the box,
                              but included in the width and height */
-
+background-color: #eaeeef;
 }
