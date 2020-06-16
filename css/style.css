@@ -1,1 +1,150 @@
+*,
+*::after,
+*::before {
+  /* universal selector */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /*every element on tge page will inherit this proprety*/ }
 
+html {
+  /*font-size: 10px;*/
+  /* setting the root font size to 10 instead 16 makes calculations easier*/
+  /*font-size: 100%; if the user doesn't change anything is 16px*/
+  font-size: 62.5%;
+  /*10px*/ }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  /*16px*/
+  line-height: 1.7;
+  padding: 3rem;
+  /*30px*/
+  box-sizing: border-box;
+  /* margins and padding are not added to the width and hight of the box,
+                             but included in the width and height */ }
+
+.heading-primary {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  backface-visibility: hidden; }
+  .heading-primary--main {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    /* animation properties:
+      animation-delay: 3s;
+      animation-iteration-count: 3s;
+      animation-timing-function: ease-in (start slower) or ease-out(start faster);
+  */ }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    margin-bottom: 2rem;
+    /*animation-name: moviInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;*/ }
+
+.heading-tertiary {
+  margin: 10rem 0rem 1rem 0rem; }
+
+.second {
+  margin-top: 5rem; }
+
+.btn:link, .btn:visited {
+  padding: 1rem 1.2rem;
+  background-color: white;
+  border-radius: 3rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  position: absolute;
+  top: 15rem;
+  left: 50%; }
+
+.btn:hover {
+  background-color: #053d75;
+  color: white;
+  font-weight: bold;
+  padding: 1.2rem 1.5rem; }
+
+.header {
+  height: 50vh;
+  background-image: url(../img/cover.jpeg);
+  background-size: cover;
+  background-position: center;
+  /*no matter viewportsize, top of the image stays on top of the cointainer*/
+  position: relative;
+  /* parent elemnent to the logo-box, reference point*/ }
+  .header__logo-box {
+    /*copies all the code in the header and adds logo-box = nesting*/
+    position: absolute;
+    /* in reference to header*/
+    top: 50%;
+    /* in reference to header*/
+    left: 50%; }
+  .header__logo {
+    height: 6rem;
+    margin: 1rem; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    /*in relation to the parent element: header*/
+    transform: translate(-50%, -50%);
+    /*applies to the elemnt itslef*/
+    text-align: center; }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    position: absolute; }
+    .composition__photo--p1 {
+      position: absolute;
+      left: 0;
+      top: 10rem;
+      height: 13rem; }
+    .composition__photo--p2 {
+      position: absolute;
+      left: 22rem;
+      top: 10rem;
+      height: 13rem; }
+    .composition__photo--p3 {
+      position: absolute;
+      left: 44rem;
+      top: 10rem;
+      height: 13rem; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 6rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 4rem; }
+  .row .col-1-of-2 {
+    width: calc( ( 100% - 4rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc(( 100% - 2 * 4rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * (( 100% - 2 * 4rem) / 3) + 4rem); }
+  .row .col-1-of-4 {
+    width: calc(( 100% - 3 * 4rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc( 2 * (( 100% - 3 * 4rem) / 4) + 4rem); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem); }

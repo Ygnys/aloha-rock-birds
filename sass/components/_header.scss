@@ -1,0 +1,30 @@
+
+.header {
+  height: 50vh;
+background-image: url(../img/cover.jpeg);
+  background-size: cover;
+  background-position: center; /*no matter viewportsize, top of the image stays on top of the cointainer*/
+  //clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  position: relative; /* parent elemnent to the logo-box, reference point*/
+
+  &__logo-box {  /*copies all the code in the header and adds logo-box = nesting*/
+    position: absolute; /* in reference to header*/
+    top: 50%; /* in reference to header*/
+    left: 50%;
+  }
+
+  &__logo {
+  height: 6rem;
+  margin: 1rem;
+
+  }
+
+  &__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%; /*in relation to the parent element: header*/
+  transform: translate(-50%, -50%); /*applies to the elemnt itslef*/
+  text-align: center /* all the elements (including btn wich is treated as text)
+  inside the box are centerd*/
+}
+}

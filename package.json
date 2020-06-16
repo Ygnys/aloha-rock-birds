@@ -1,0 +1,26 @@
+{
+  "name": "aloha-rock-birds",
+  "version": "1.0.0",
+  "description": "landing page for Aloha Rock Birds",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ygnys/aloha-rock-birds.git"
+  },
+  "author": "Agnieszka Stec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ygnys/aloha-rock-birds/issues"
+  },
+  "homepage": "https://github.com/Ygnys/aloha-rock-birds#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

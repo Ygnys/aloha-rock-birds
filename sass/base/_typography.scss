@@ -1,0 +1,45 @@
+.heading-primary {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+ backface-visibility: hidden;
+
+  &--main {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+
+
+  // animation-name: moviInLeft;
+  // animation-duration: 1s;
+  // animation-timing-function: ease-out;
+  /* animation properties:
+      animation-delay: 3s;
+      animation-iteration-count: 3s;
+      animation-timing-function: ease-in (start slower) or ease-out(start faster);
+  */
+  }
+
+&--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2rem;
+  // animation: moviInRight 1s ease-out;
+
+  /*animation-name: moviInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;*/
+  }
+}
+
+.heading-tertiary {
+margin: 10rem 0rem 1rem 0rem;
+
+}
+
+.second {
+  margin-top: 5rem;
+}
