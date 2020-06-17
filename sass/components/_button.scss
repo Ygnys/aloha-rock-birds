@@ -2,7 +2,7 @@
   &:link,
   &:visited {
 
-  padding: 1rem 2rem;
+  padding: 1.5rem 2.5rem;
   background-color: #e88d9f;
   letter-spacing: 0.3rem;
   border-radius: 3rem;
@@ -10,9 +10,8 @@
   font-weight: 900;
   color: white;
   //color: #053d75;
-  position: absolute;
-  top: 120%;
-  left: 30%;
+  //position: absolute;
+ font-size: 2rem;
 
 }
  &:hover{

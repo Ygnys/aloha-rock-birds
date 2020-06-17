@@ -1,7 +1,15 @@
 
 .header {
-  height: 50vh;
-background-image: url(../img/cover.jpeg);
+  height: 70vh;
+
+ background-image: linear-gradient(
+    to right bottom,
+rgba(green, 0.6),
+
+
+
+  rgba(#1b91d6, 0.7)),
+    url(../img/stado.jpg);
   background-size: cover;
   background-position: center; /*no matter viewportsize, top of the image stays on top of the cointainer*/
   //clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
@@ -9,7 +17,7 @@ background-image: url(../img/cover.jpeg);
 
   &__logo-box {  /*copies all the code in the header and adds logo-box = nesting*/
     position: absolute; /* in reference to header*/
-    top: 65%; /* in reference to header*/
+    top: 0%; /* in reference to header*/
     left: 1%;
   }
 
@@ -24,7 +32,7 @@ background-image: url(../img/cover.jpeg);
 
   &__text-box {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%; /*in relation to the parent element: header*/
   transform: translate(-50%, -50%); /*applies to the elemnt itslef*/
   text-align: center /* all the elements (including btn wich is treated as text)
