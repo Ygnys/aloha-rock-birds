@@ -4,30 +4,39 @@
   &__photo {
 
     box-shadow: 0 1rem 10rem rgba(black, .4rem);
-    border-radius: 5px;
+    border-radius: 4px;
     position: absolute;
+    //outline-offset: .5rem;
 
 
     &--p1 {
-      position: absolute;
+
       left: 0;
       top: 10rem;
       height: 13rem;
     }
 
     &--p2 {
-      position: absolute;
+
       left: 22rem;
       top: 10rem;
       height: 13rem;
     }
 
    &--p3 {
-      position: absolute;
+
       left: 44rem;
       top: 10rem;
       height: 13rem;
     }
 
+  &:hover {
+    //outline: 0.5rem solid $pink-main;
+    transform: scale(2);
+    box-shadow: 0 1rem 10rem rgba(black, .5rem);
+  }
+}
+&:hover &__photo:not(:hover) {
+  transform: scale(.9);
 }
 }
