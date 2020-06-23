@@ -3,7 +3,7 @@
   &:visited {
 
   padding: 1.5rem 2.5rem;
-  background-color: #e88d9f;
+  background-image: linear-gradient(to right bottom, $pink-light, $pink-main);
   letter-spacing: 0.3rem;
   border-radius: 3rem;
   text-decoration: none;
@@ -15,7 +15,7 @@
 
 }
  &:hover{
-  background-color: #e88d9f;
+  background-color: $pink-light;
   color: white;
   font-weight: 900;
   padding: 1.5rem 2.5rem;

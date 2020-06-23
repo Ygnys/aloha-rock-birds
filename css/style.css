@@ -59,7 +59,7 @@ body {
 
 .btn:link, .btn:visited {
   padding: 1.5rem 2.5rem;
-  background-color: #e88d9f;
+  background-image: linear-gradient(to right bottom, #dba4af, #e88d9f);
   letter-spacing: 0.3rem;
   border-radius: 3rem;
   text-decoration: none;
@@ -68,7 +68,7 @@ body {
   font-size: 2rem; }
 
 .btn:hover {
-  background-color: #e88d9f;
+  background-color: #dba4af;
   color: white;
   font-weight: 900;
   padding: 1.5rem 2.5rem;
@@ -76,7 +76,7 @@ body {
 
 .header {
   height: 70vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.6), rgba(27, 145, 214, 0.7)), url(../img/stado.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.7), rgba(27, 145, 214, 0.8)), url(../img/stado.jpg);
   background-size: cover;
   background-position: center;
   /*no matter viewportsize, top of the image stays on top of the cointainer*/
@@ -126,6 +126,34 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
 
+.card-product {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center; }
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover; }
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0; }
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px; }
+
+.card-product .card-product-infos {
+  padding: 16px; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -164,7 +192,6 @@ body {
   right: 6rem;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
 
@@ -173,18 +200,22 @@ body {
   width: 6rem;
   border-radius: 50%;
   position: fixed;
-  top: 0rem;
+  top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(yellow);
+  background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.6), rgba(27, 145, 214, 0.7)), url(../img/stado.jpg);
+  background-size: cover;
   z-index: 1000;
-  transform: scale(50); }
+  transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1); }
 
 .navigation__nav {
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1500; }
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0.8s cubic-bezier(0.42, 0, 0.58, 1); }
 
 .navigation__list {
   position: absolute;
@@ -206,17 +237,19 @@ body {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
   background-size: 220%;
-  transition: all .4s; }
-  .navigation__link:link span, .navigation__link:visited span {
-    margin-right: 1.5rem;
-    display: inline-block; }
+  transition: all .1s;
+  font-weight: 500;
+  text-shadow: 2;
+  letter-spacing: 0.3rem; }
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
-  color: gray;
-  transform: translateX(1rem); }
+  color: white;
+  text-shadow: 2;
+  transform: translateX(1rem);
+  font-size: 4rem;
+  font-weight: 700; }
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80); }
@@ -259,3 +292,31 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg); }
+
+.footer {
+  background-image: linear-gradient(to right bottom, #dba4af, #e88d9f);
+  padding: 3rem 0; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 1rem; }
+  .footer__logo {
+    height: auto;
+    width: 5rem; }
+  .footer__links {
+    color: #243262;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: .1rem; }
+  .footer i:hover {
+    font-size: 3rem;
+    margin: .5rem; }
+  .footer a {
+    color: #243262;
+    text-decoration: none; }
+  .footer__copyright {
+    text-align: center;
+    color: #243262;
+    letter-spacing: .1rem; }

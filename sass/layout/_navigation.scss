@@ -14,7 +14,7 @@
         right: 6rem;
         border-radius: 50%;
         z-index: 2000;
-        box-shadow: 0 1rem 3rem rgba(black, .1);
+
         text-align: center;
         cursor: pointer;
 
@@ -25,12 +25,19 @@
         width: 6rem;
         border-radius: 50%;
         position: fixed;
-        top: 0rem;
+        top: 6.5rem;
         right: 6.5rem;
-        background-image: radial-gradient(yellow);
+        background-image: linear-gradient(
+    to right bottom,
+rgba(green, 0.6),
+  rgba(#1b91d6, 0.7)),
+    url(../img/stado.jpg);
+  background-size: cover;
+
+        //background-image: radial-gradient(pink, gray);
         z-index: 1000;
-        transform: scale(50);
-        //transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+        //transform: scale(5);
+        transition: transform 0.3s cubic-bezier(.86, 0, 0.07, 1);
 
 
 
@@ -43,16 +50,16 @@
         left: 0;
         z-index: 1500;
 
-        // opacity: 0;
-        // width: 0;
-        // transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        opacity: 0;
+        width: 0;
+        transition: all .8s cubic-bezier(0.42, 0.0, 0.58, 1.0);
 
   }
 
   &__list {
     position: absolute;
         top: 50%;
-        left: 50%;
+      left: 50%;
         transform: translate(-50%,-50%);
         list-style: none;
         text-align: center;
@@ -66,8 +73,8 @@
   }
 
   &__link {
-     &:link,
-        &:visited {
+      &:link,
+      &:visited {
             display: inline-block;
             font-size: 3rem;
             font-weight: 300;
@@ -75,22 +82,26 @@
             color: white;
             text-decoration: none;
             text-transform: uppercase;
-            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+            //background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
             background-size: 220%;
-            transition: all .4s;
+            transition: all .1s;
+            font-weight: 500;
+            text-shadow: 2;
+            letter-spacing: 0.3rem;
 
-          span {
-                margin-right: 1.5rem;
-                display: inline-block;
-            }
 
-        }
 
+
+
+}
         &:hover,
         &:active {
             background-position: 100%;
-            color: gray;
+            color: white;
+            text-shadow: 2;
             transform: translateX(1rem);
+            font-size: 4rem;
+            font-weight: 700;
 }
 }
 
