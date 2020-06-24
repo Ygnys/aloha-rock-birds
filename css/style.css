@@ -155,23 +155,31 @@ body {
   padding: 16px; }
 
 .gallery {
-  position: relative; }
+  position: relative;
+  height: 40px; }
 
 .mySlides {
-  display: none; }
+  display: none;
+  text-align: center; }
+
+.mySlides img {
+  width: 40rem;
+  box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.4);
+  border-radius: 4px; }
 
 .cursor {
   cursor: pointer; }
 
 .prev,
 .next {
+  text-align: center;
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 40vh;
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -182,10 +190,6 @@ body {
   right: 0;
   border-radius: 3px 0 0 3px; }
 
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8); }
-
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -195,9 +199,12 @@ body {
 
 .caption-container {
   text-align: center;
-  background-color: #222;
+  background-color: rgba(36, 50, 98, 0.9);
   padding: 2px 16px;
-  color: white; }
+  color: white;
+  width: 40rem;
+  margin: 0 auto;
+  border-radius: 4px; }
 
 .row:after {
   content: "";
@@ -206,10 +213,13 @@ body {
 
 .column {
   float: left;
-  width: 16.66%; }
+  width: 16.6%; }
 
 .demo {
-  opacity: 0.6; }
+  opacity: 0.6;
+  margin-top: 5rem;
+  padding: 1rem;
+  border-radius: 4px; }
 
 .active,
 .demo:hover {
@@ -356,7 +366,9 @@ body {
 
 .footer {
   background-image: linear-gradient(to right bottom, #dba4af, #e88d9f);
-  padding: 3rem 0; }
+  padding: 3rem 0;
+  background-size: cover;
+  width: 100%; }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 1rem; }
