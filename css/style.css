@@ -107,11 +107,14 @@ body {
   .composition__photo {
     box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.4);
     border-radius: 4px;
-    position: absolute; }
+    position: absolute;
+    opacity: 1; }
     .composition__photo--p1 {
-      left: 0;
-      top: 10rem;
-      height: 13rem; }
+      left: 10rem;
+      top: 20rem;
+      height: 13rem;
+      transform: scale(2);
+      box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.5); }
     .composition__photo--p2 {
       left: 22rem;
       top: 10rem;
@@ -122,7 +125,10 @@ body {
       height: 13rem; }
     .composition__photo:hover {
       transform: scale(2);
-      box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.5); }
+      box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.5);
+      top: 20rem;
+      left: 10rem;
+      opacity: 1; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
 
@@ -216,14 +222,27 @@ body {
   width: 16.6%; }
 
 .demo {
-  opacity: 0.6;
+  opacity: 0.7;
   margin-top: 5rem;
-  padding: 1rem;
-  border-radius: 4px; }
+  padding: 1rem; }
 
 .active,
 .demo:hover {
   opacity: 1; }
+
+.about {
+  position: relative; }
+  .about__photo {
+    box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    position: absolute;
+    left: 0rem;
+    top: 10rem;
+    height: 15rem; }
+  .about:hover {
+    transform: scale(2);
+    box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.5);
+    top: -10rem; }
 
 .row {
   max-width: 114rem;

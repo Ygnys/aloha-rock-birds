@@ -1,0 +1,33 @@
+.about {
+  position: relative;
+
+  &__photo {
+    box-shadow: 0 1rem 10rem rgba(black, .4rem);
+     border-radius: 50%;
+    position: absolute;
+        left: 0rem;
+      top: 10rem;
+      height: 15rem;
+
+
+   // &--p1 {
+
+   //    left: 22rem;
+   //    top: 10rem;
+   //    height: 15rem;
+
+
+   //  }
+
+
+}
+    &:hover {
+    //outline: 0.5rem solid $pink-main;
+    transform: scale(2);
+    box-shadow: 0 1rem 5rem rgba(black, .5rem);
+    top: -10rem;
+
+
+  }
+}
+

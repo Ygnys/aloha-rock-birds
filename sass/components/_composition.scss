@@ -6,14 +6,18 @@
     box-shadow: 0 1rem 10rem rgba(black, .4rem);
     border-radius: 4px;
     position: absolute;
+    opacity: 1;
+
     //outline-offset: .5rem;
 
 
     &--p1 {
 
-      left: 0;
-      top: 10rem;
+      left: 10rem;
+      top: 20rem;
       height: 13rem;
+      transform: scale(2);
+      box-shadow: 0 1rem 10rem rgba(black, .5rem);
     }
 
     &--p2 {
@@ -34,6 +38,9 @@
     //outline: 0.5rem solid $pink-main;
     transform: scale(2);
     box-shadow: 0 1rem 10rem rgba(black, .5rem);
+    top: 20rem;
+    left: 10rem;
+    opacity: 1;
   }
 }
 &:hover &__photo:not(:hover) {
