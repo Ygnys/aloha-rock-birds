@@ -48,7 +48,7 @@ box-shadow: 0 1rem 10rem rgba(black, .4rem);
 }
 
 .numbertext {
-  color: #f2f2f2;
+  color: pink;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -56,14 +56,16 @@ box-shadow: 0 1rem 10rem rgba(black, .4rem);
 }
 .caption-container {
   text-align: center;
-  background-color: rgba($logo-color, 0.9);
+  background-color: rgba($pink-main, 1);
   padding: 2px 16px;
   color: white;
   width: 40rem;
   margin: 0 auto;
   border-radius: 4px;
+font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
 }
-
 .row:after {
   content: "";
   display: table;
@@ -80,6 +82,7 @@ box-shadow: 0 1rem 10rem rgba(black, .4rem);
   padding: 1rem;
 
 
+
 }
 
 
@@ -87,5 +90,6 @@ box-shadow: 0 1rem 10rem rgba(black, .4rem);
 .demo:hover {
   opacity: 1;
 }
+
 
 
