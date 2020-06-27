@@ -27,11 +27,11 @@
 
                   <div class="navigation__background">&nbsp;</div>
                   <nav class="navigation__nav">
-                      <ul class="navigation__list">
+                      <ul id="menu" class="navigation__list">
                           <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
-                          <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
-                          <li class="navigation__item"><a href="#" class="navigation__link">Gallery</a></li>
-                          <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
+                          <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+                          <li class="navigation__item"><a href="#gallery" class="navigation__link">Gallery</a></li>
+                          <li class="navigation__item"><a href="#footer" class="navigation__link">Contact</a></li>
 
                           </ul>
                   </nav>
@@ -305,7 +305,7 @@
 </div>
 
 <div class="col-3-of-3">
-                <div class="about">
+                <div class="about" id="about">
                  <img src="img/kasia.jpeg" alt="" class="about__photo about__photo--p1">
 
               </div>
@@ -335,5 +335,16 @@
        </section>
 
 
+ <script>
+      var menu = document.getElementById('menu');
+      var closeIcon = document.getElementById('navi-toggle');
 
+      menu.addEventListener('click', handleMenuClick);
+
+      function handleMenuClick(event) {
+        if (event.target instanceof HTMLAnchorElement) {
+          closeIcon.checked = false;
+        }
+      }
+    </script>
           </body>
