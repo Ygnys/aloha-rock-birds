@@ -200,13 +200,6 @@ body {
   right: 0;
   border-radius: 3px 0 0 3px; }
 
-.numbertext {
-  color: pink;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0; }
-
 .caption-container {
   text-align: center;
   background-color: #e88d9f;
@@ -228,13 +221,13 @@ body {
   float: left;
   width: 16.6%; }
 
-.demo {
+.small-pictures {
   opacity: 0.7;
   margin-top: 5rem;
   padding: 1rem; }
 
 .active,
-.demo:hover {
+.small-pictures:hover {
   opacity: 1; }
 
 .about {
