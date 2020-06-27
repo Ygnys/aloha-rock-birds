@@ -57,6 +57,10 @@ body {
 .second {
   margin-top: 5rem; }
 
+.paragraph {
+  font-size: 1.6rem;
+  letter-spacing: .05rem; }
+
 .btn:link, .btn:visited {
   padding: 1.5rem 2.5rem;
   background-image: linear-gradient(to right bottom, #dba4af, #e88d9f);
@@ -111,7 +115,7 @@ body {
     opacity: 1; }
     .composition__photo--p1 {
       left: 10rem;
-      top: 20rem;
+      top: 18rem;
       height: 13rem;
       transform: scale(2);
       box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.5); }
@@ -126,7 +130,7 @@ body {
     .composition__photo:hover {
       transform: scale(2);
       box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.5);
-      top: 20rem;
+      top: 18rem;
       left: 10rem;
       opacity: 1; }
   .composition:hover .composition__photo:not(:hover) {
