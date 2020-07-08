@@ -9,21 +9,22 @@
 html{
   /*font-size: 10px;*/ /* setting the root font size to 10 instead 16 makes calculations easier*/
   /*font-size: 100%; if the user doesn't change anything is 16px*/
-  font-size: 62.5%; /*10px*/
+  font-size: 72.5%; /*10px*/
 }
 
 
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Comic Neue', cursive;
   font-weight: 400;
   font-size: 1.5rem; /*16px*/
   line-height: 1.7;
   position: relative;
 
-  // color: white;
+  color: $logo-color;
   // padding: 3rem; /*30px*/
   box-sizing: border-box; /* margins and padding are not added to the width and hight of the box,
                              but included in the width and height */
-background-color: #eaeeef;
+background-color: #FF8F8F;
+
 }
