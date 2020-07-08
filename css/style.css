@@ -11,17 +11,17 @@ html {
   /*font-size: 10px;*/
   /* setting the root font size to 10 instead 16 makes calculations easier*/
   /*font-size: 100%; if the user doesn't change anything is 16px*/
-  font-size: 72.5%;
+  font-size: 70.5%;
   /*10px*/ }
 
 body {
   font-family: 'Comic Neue', cursive;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.5rem;
   /*16px*/
   line-height: 1.7;
   position: relative;
-  color: #243262;
+  color: #202020;
   box-sizing: border-box;
   /* margins and padding are not added to the width and hight of the box,
                              but included in the width and height */
@@ -296,7 +296,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.6), rgba(27, 145, 214, 0.7)), url(../img/stado.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.7), rgba(255, 255, 0, 0.5), rgba(255, 0, 0, 0.4), rgba(255, 192, 203, 0.8), rgba(27, 145, 214, 0.8)), url(../img/stado.jpg);
   background-size: cover;
   z-index: 1000;
   transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1); }
