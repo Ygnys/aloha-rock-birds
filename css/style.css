@@ -296,7 +296,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.7), rgba(255, 255, 0, 0.5), rgba(255, 0, 0, 0.4), rgba(255, 192, 203, 0.8), rgba(27, 145, 214, 0.8)), url(../img/stado.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.7), rgba(255, 0, 0, 0.4), rgba(255, 192, 203, 0.8), rgba(27, 145, 214, 0.8)), url(../img/stado.jpg);
   background-size: cover;
   z-index: 1000;
   transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1); }
@@ -415,4 +415,5 @@ body {
   .footer__copyright {
     text-align: center;
     color: #243262;
-    letter-spacing: .1rem; }
+    letter-spacing: .1rem;
+    font-weight: 400; }
