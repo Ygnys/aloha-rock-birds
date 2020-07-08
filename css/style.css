@@ -11,20 +11,21 @@ html {
   /*font-size: 10px;*/
   /* setting the root font size to 10 instead 16 makes calculations easier*/
   /*font-size: 100%; if the user doesn't change anything is 16px*/
-  font-size: 62.5%;
+  font-size: 70.5%;
   /*10px*/ }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
+  font-family: 'Comic Neue', cursive;
+  font-weight: 500;
   font-size: 1.5rem;
   /*16px*/
   line-height: 1.7;
   position: relative;
+  color: #202020;
   box-sizing: border-box;
   /* margins and padding are not added to the width and hight of the box,
                              but included in the width and height */
-  background-color: #eaeeef; }
+  background-color: #FF8F8F; }
 
 .heading-primary {
   color: white;
@@ -63,24 +64,24 @@ body {
 
 .btn:link, .btn:visited {
   padding: 1.5rem 2.5rem;
-  background-image: linear-gradient(to right bottom, #dba4af, #e88d9f);
+  background-color: white;
   letter-spacing: 0.3rem;
   border-radius: 3rem;
   text-decoration: none;
   font-weight: 900;
-  color: white;
+  color: #FF8F8F;
   font-size: 2rem; }
 
 .btn:hover {
-  background-color: #dba4af;
-  color: white;
+  background-color: whitet;
+  color: #FF8F8F;
   font-weight: 900;
   padding: 1.5rem 2.5rem;
   font-size: 1.8rem; }
 
 .header {
   height: 70vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.7), rgba(27, 145, 214, 0.8)), url(../img/stado.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.7), rgba(255, 255, 0, 0.5), rgba(255, 0, 0, 0.4), rgba(27, 145, 214, 0.8)), url(../img/cover3.jpeg);
   background-size: cover;
   background-position: center;
   /*no matter viewportsize, top of the image stays on top of the cointainer*/
@@ -104,7 +105,10 @@ body {
     /*in relation to the parent element: header*/
     transform: translate(-50%, -50%);
     /*applies to the elemnt itslef*/
-    text-align: center; }
+    text-align: center;
+    /* all the elements (including btn wich is treated as text)
+  inside the box are centerd*/
+    font-family: 'Comic Neue', cursive; }
 
 .composition {
   position: relative; }
@@ -202,7 +206,7 @@ body {
 
 .caption-container {
   text-align: center;
-  background-color: #e88d9f;
+  background-color: #ff8f8f;
   padding: 2px 16px;
   color: white;
   width: 40rem;
@@ -222,7 +226,7 @@ body {
   width: 16.6%; }
 
 .small-pictures {
-  opacity: 0.7;
+  opacity: 0.8;
   margin-top: 5rem;
   padding: 1rem; }
 
@@ -292,7 +296,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.6), rgba(27, 145, 214, 0.7)), url(../img/stado.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.7), rgba(255, 0, 0, 0.4), rgba(255, 192, 203, 0.8), rgba(27, 145, 214, 0.8)), url(../img/stado.jpg);
   background-size: cover;
   z-index: 1000;
   transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1); }
@@ -384,7 +388,7 @@ body {
   transform: rotate(-135deg); }
 
 .footer {
-  background-image: linear-gradient(to right bottom, #dba4af, #e88d9f);
+  background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.7), rgba(255, 255, 0, 0.5), rgba(255, 0, 0, 0.4), rgba(27, 145, 214, 0.8));
   padding: 3rem 0;
   background-size: cover;
   width: 100%; }
@@ -411,4 +415,5 @@ body {
   .footer__copyright {
     text-align: center;
     color: #243262;
-    letter-spacing: .1rem; }
+    letter-spacing: .1rem;
+    font-weight: 400; }
