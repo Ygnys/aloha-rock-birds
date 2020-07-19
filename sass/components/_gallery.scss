@@ -50,7 +50,7 @@ box-shadow: 0 1rem 10rem rgba(black, .4rem);
 
 .caption-container {
   text-align: center;
-  background-color: rgba($pink-main, 1);
+  background-color: rgba(#80b918, .8);
   padding: 2px 16px;
   color: white;
   width: 40rem;
@@ -71,7 +71,7 @@ box-shadow: 0 1rem 10rem rgba(black, .4rem);
 }
 
 .small-pictures {
-  opacity: 0.8;
+  opacity: 1;
   margin-top: 5rem;
   padding: 1rem;
 }
@@ -79,7 +79,7 @@ box-shadow: 0 1rem 10rem rgba(black, .4rem);
 
 .active,
 .small-pictures:hover {
-  opacity: 1;
+  opacity: .8;
 }
 
 

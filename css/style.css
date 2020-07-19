@@ -14,9 +14,12 @@ html {
   font-size: 70.5%;
   /*10px*/ }
 
+body header {
+  font-family: 'Comic Neue', cursive; }
+
 body {
-  font-family: 'Comic Neue', cursive;
-  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   font-size: 1.5rem;
   /*16px*/
   line-height: 1.7;
@@ -25,7 +28,11 @@ body {
   box-sizing: border-box;
   /* margins and padding are not added to the width and hight of the box,
                              but included in the width and height */
-  background-color: #FF8F8F; }
+  background-color: #fbc4ab; }
+
+.container {
+  width: 100%;
+  margin: 5rem auto; }
 
 .heading-primary {
   color: white;
@@ -69,19 +76,19 @@ body {
   border-radius: 3rem;
   text-decoration: none;
   font-weight: 900;
-  color: #FF8F8F;
+  color: #ffb4a2;
   font-size: 2rem; }
 
 .btn:hover {
   background-color: whitet;
-  color: #FF8F8F;
+  color: #ffb4a2;
   font-weight: 900;
   padding: 1.5rem 2.5rem;
   font-size: 1.8rem; }
 
 .header {
   height: 70vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.7), rgba(255, 255, 0, 0.5), rgba(255, 0, 0, 0.4), rgba(27, 145, 214, 0.8)), url(../img/cover3.jpeg);
+  background-image: linear-gradient(to right bottom, rgba(85, 166, 48, 0.4), rgba(128, 185, 24, 0.5)), url(../img/cover4.jpeg);
   background-size: cover;
   background-position: center;
   /*no matter viewportsize, top of the image stays on top of the cointainer*/
@@ -108,21 +115,20 @@ body {
     text-align: center;
     /* all the elements (including btn wich is treated as text)
   inside the box are centerd*/
-    font-family: 'Comic Neue', cursive; }
+    font-family: 'Comic Neue', cursive;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
 
 .composition {
   position: relative; }
   .composition__photo {
-    box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.4);
     border-radius: 4px;
     position: absolute;
     opacity: 1; }
     .composition__photo--p1 {
-      left: 10rem;
-      top: 18rem;
+      left: 9rem;
+      top: 24rem;
       height: 13rem;
-      transform: scale(2);
-      box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.5); }
+      transform: scale(1.7); }
     .composition__photo--p2 {
       left: 22rem;
       top: 10rem;
@@ -132,10 +138,8 @@ body {
       top: 10rem;
       height: 13rem; }
     .composition__photo:hover {
-      transform: scale(2);
-      box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.5);
-      top: 18rem;
-      left: 10rem;
+      transform: scale(1.7);
+      left: 9rem;
       opacity: 1; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
@@ -206,7 +210,7 @@ body {
 
 .caption-container {
   text-align: center;
-  background-color: #ff8f8f;
+  background-color: rgba(128, 185, 24, 0.8);
   padding: 2px 16px;
   color: white;
   width: 40rem;
@@ -226,13 +230,13 @@ body {
   width: 16.6%; }
 
 .small-pictures {
-  opacity: 0.8;
+  opacity: 1;
   margin-top: 5rem;
   padding: 1rem; }
 
 .active,
 .small-pictures:hover {
-  opacity: 1; }
+  opacity: .8; }
 
 .about {
   position: relative; }
@@ -278,7 +282,6 @@ body {
   display: none; }
 
 .navigation__button {
-  background-color: white;
   height: 7rem;
   width: 7rem;
   position: fixed;
@@ -296,7 +299,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.7), rgba(255, 0, 0, 0.4), rgba(255, 192, 203, 0.8), rgba(27, 145, 214, 0.8)), url(../img/stado.jpg);
+  background-image: url(../img/logo.jpg);
   background-size: cover;
   z-index: 1000;
   transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1); }
@@ -326,7 +329,7 @@ body {
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 500;
   padding: 1rem 2rem;
   color: white;
   text-decoration: none;
@@ -346,7 +349,9 @@ body {
   font-weight: 700; }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(80); }
+  transform: scale(50);
+  background-image: url(../img/sesja5.jpeg);
+  background-position: top; }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
@@ -358,7 +363,7 @@ body {
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
     height: 2px;
-    background-color: gray;
+    background-color: transparent;
     display: inline-block; }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
@@ -377,7 +382,9 @@ body {
   top: 1rem; }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon {
-  background-color: transparent; }
+  background-color: white;
+  width: 6rem;
+  height: 4px; }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
   top: 0;
@@ -388,10 +395,11 @@ body {
   transform: rotate(-135deg); }
 
 .footer {
-  background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.7), rgba(255, 255, 0, 0.5), rgba(255, 0, 0, 0.4), rgba(27, 145, 214, 0.8));
-  padding: 3rem 0;
+  background-image: linear-gradient(to right bottom, rgba(43, 147, 72, 0.6), rgba(85, 166, 48, 0.7), rgba(170, 204, 0, 0.8));
+  padding: 5rem 0;
   background-size: cover;
-  width: 100%; }
+  width: 100%;
+  margin: 0; }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 1rem; }
@@ -417,3 +425,7 @@ body {
     color: #243262;
     letter-spacing: .1rem;
     font-weight: 400; }
+
+.container-footer {
+  width: 100%;
+  margin: 0; }

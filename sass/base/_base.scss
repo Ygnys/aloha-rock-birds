@@ -12,11 +12,12 @@ html{
   font-size: 70.5%; /*10px*/
 }
 
-
+body header { font-family: 'Comic Neue', cursive;
+}
 
 body {
-  font-family: 'Comic Neue', cursive;
-  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   font-size: 1.5rem; /*16px*/
   line-height: 1.7;
   position: relative;
@@ -24,6 +25,12 @@ body {
   color: rgb(32,32,32);
   box-sizing: border-box; /* margins and padding are not added to the width and hight of the box,
                              but included in the width and height */
-background-color: #FF8F8F;
+// background-color: #ffb4a2;
+background-color: #fbc4ab;
 
+}
+
+.container {
+  width: 100%;
+  margin: 5rem auto;
 }

@@ -6,7 +6,7 @@
   }
 
   &__button {
-     background-color: white;
+
         height: 7rem;
         width: 7rem;
         position: fixed;
@@ -14,6 +14,7 @@
         right: 6rem;
         border-radius: 50%;
         z-index: 2000;
+
 
         text-align: center;
         cursor: pointer;
@@ -27,13 +28,8 @@
         position: fixed;
         top: 6.5rem;
         right: 6.5rem;
-        background-image: linear-gradient(
-    to right bottom,
-rgba(green, 0.7),
-rgba(red, 0.4),
-rgba(pink, 0.8),
-  rgba(#1b91d6, 0.8)),
-    url(../img/stado.jpg);
+        background-image:
+    url(../img/logo.jpg);
   background-size: cover;
 
         //background-image: radial-gradient(pink, gray);
@@ -79,12 +75,12 @@ rgba(pink, 0.8),
       &:visited {
             display: inline-block;
             font-size: 3rem;
-            font-weight: 300;
+            font-weight: 500;
             padding: 1rem 2rem;
             color: white;
             text-decoration: none;
             text-transform: uppercase;
-            //background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+
             background-size: 220%;
             transition: all .1s;
             font-weight: 500;
@@ -109,7 +105,12 @@ rgba(pink, 0.8),
 
 //FUNCTIONALITY
     &__checkbox:checked ~ &__background {
-        transform: scale(80);
+        transform: scale(50);
+        background-image: url(../img/sesja5.jpeg);
+        background-position: top;
+
+
+
     }
 
     &__checkbox:checked ~ &__nav {
@@ -128,9 +129,11 @@ rgba(pink, 0.8),
         &::after {
             width: 3rem;
             height: 2px;
-            background-color: gray;
+            background-color: transparent;
             display: inline-block;
         }
+
+
 
         &::before,
         &::after {
@@ -153,7 +156,12 @@ rgba(pink, 0.8),
     }
 
     &__checkbox:checked + &__button &__icon {
-        background-color: transparent;
+        background-color: white;
+        width: 6rem;
+        height: 4px;
+
+
+
     }
 
     &__checkbox:checked + &__button &__icon::before {
