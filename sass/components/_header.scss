@@ -28,10 +28,11 @@ url(../img/cover100.jpg);
   }
 
   &__text-box {
-  position: absolute;
-  top: 25%;
-  left: 50%; /*in relation to the parent element: header*/
-  transform: translate(-50%, -50%); /*applies to the elemnt itslef*/
+  // position: absolute;
+  // top: 25%;
+  // left: 50%; /*in relation to the parent element: header*/
+  //transform: translate(-50%, -50%); /*applies to the elemnt itslef*/
+  padding: 5rem;
   text-align: center; /* all the elements (including btn wich is treated as text)
   inside the box are centerd*/
   font-family: 'Comic Neue', cursive;

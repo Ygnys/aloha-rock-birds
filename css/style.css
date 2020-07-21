@@ -12,7 +12,7 @@ html {
   /* setting the root font size to 10 instead 16 makes calculations easier*/
   /*font-size: 100%; if the user doesn't change anything is 16px*/
   font-size: 70.5%;
-  /*10px*/ }
+  /*11.5px*/ }
 
 body header {
   font-family: 'Comic Neue', cursive; }
@@ -30,9 +30,21 @@ body {
                              but included in the width and height */
   background-color: #ffb4a2; }
 
-.container {
+.main-container {
   width: 100%;
   margin: 5rem auto; }
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 80.5%; } }
+
+@media (max-width: 900px) {
+  html {
+    font-size: 70%; } }
+
+@media (max-width: 600px) {
+  html {
+    font-size: 40%; } }
 
 .heading-primary {
   color: white;
@@ -60,13 +72,16 @@ body {
   animation-timing-function: ease-out;*/ }
 
 .heading-tertiary {
-  margin: 5rem 0rem 1rem 0rem; }
+  margin: 5rem 0rem 1rem 0rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding: 1rem 0; }
 
 .second {
   margin-top: 5rem; }
 
 .paragraph {
-  font-size: 1.6rem;
+  font-size: 2rem;
   letter-spacing: .05rem; }
 
 .btn:link, .btn:visited {
@@ -106,12 +121,7 @@ body {
     margin: 1rem;
     opacity: 0.6; }
   .header__text-box {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    /*in relation to the parent element: header*/
-    transform: translate(-50%, -50%);
-    /*applies to the elemnt itslef*/
+    padding: 5rem;
     text-align: center;
     /* all the elements (including btn wich is treated as text)
   inside the box are centerd*/
@@ -123,7 +133,8 @@ body {
   .composition__photo {
     border-radius: 4px;
     position: absolute;
-    opacity: 1; }
+    opacity: 1;
+    padding: 30rem 5rem; }
     .composition__photo--p1 {
       left: 8.5rem;
       top: 24rem;
@@ -211,7 +222,7 @@ body {
 .caption-container {
   text-align: center;
   background-color: rgba(128, 185, 24, 0.8);
-  padding: 2px 16px;
+  padding: 0px 16px;
   color: white;
   width: 40rem;
   margin: 0 auto;

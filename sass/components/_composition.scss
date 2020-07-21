@@ -1,5 +1,4 @@
 
-
 .composition {
   position: relative;
 
@@ -7,8 +6,11 @@
 
     // box-shadow: 0 .1rem .1rem rgba(black, .4rem);
     border-radius: 4px;
-    position: absolute;
+     position: absolute;
     opacity: 1;
+  padding: 30rem 5rem;
+
+
 
     //outline-offset: .5rem;
 
@@ -44,7 +46,7 @@
     // top: 18rem;
     left: 8.5rem;
     opacity: 1;
-  }
+}
 }
 &:hover &__photo:not(:hover) {
   transform: scale(.9);
