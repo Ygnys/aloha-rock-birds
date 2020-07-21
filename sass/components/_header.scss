@@ -4,9 +4,9 @@
 
  background-image: linear-gradient(
     to right bottom,
-rgba(#55a630, .4),
-rgba(#80b918, .5)),
-url(../img/cover4.jpeg);
+rgba(#ffb4a2, .1),
+rgba(#fcd5ce, .1)),
+url(../img/cover100.jpg);
   background-size: cover;
   background-position: center; /*no matter viewportsize, top of the image stays on top of the cointainer*/
   //clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
@@ -29,12 +29,12 @@ url(../img/cover4.jpeg);
 
   &__text-box {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%; /*in relation to the parent element: header*/
   transform: translate(-50%, -50%); /*applies to the elemnt itslef*/
   text-align: center; /* all the elements (including btn wich is treated as text)
   inside the box are centerd*/
   font-family: 'Comic Neue', cursive;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2)
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2)
 }
 }

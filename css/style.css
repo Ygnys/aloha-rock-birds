@@ -18,7 +18,7 @@ body header {
   font-family: 'Comic Neue', cursive; }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Comic Neue', cursive;
   font-weight: 300;
   font-size: 1.5rem;
   /*16px*/
@@ -28,7 +28,7 @@ body {
   box-sizing: border-box;
   /* margins and padding are not added to the width and hight of the box,
                              but included in the width and height */
-  background-color: #fbc4ab; }
+  background-color: #ffb4a2; }
 
 .container {
   width: 100%;
@@ -40,7 +40,7 @@ body {
   backface-visibility: hidden; }
   .heading-primary--main {
     display: inline-block;
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 700;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
@@ -88,7 +88,7 @@ body {
 
 .header {
   height: 70vh;
-  background-image: linear-gradient(to right bottom, rgba(85, 166, 48, 0.4), rgba(128, 185, 24, 0.5)), url(../img/cover4.jpeg);
+  background-image: linear-gradient(to right bottom, rgba(255, 180, 162, 0.1), rgba(252, 213, 206, 0.1)), url(../img/cover100.jpg);
   background-size: cover;
   background-position: center;
   /*no matter viewportsize, top of the image stays on top of the cointainer*/
@@ -107,7 +107,7 @@ body {
     opacity: 0.6; }
   .header__text-box {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     /*in relation to the parent element: header*/
     transform: translate(-50%, -50%);
@@ -116,7 +116,7 @@ body {
     /* all the elements (including btn wich is treated as text)
   inside the box are centerd*/
     font-family: 'Comic Neue', cursive;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
 
 .composition {
   position: relative; }
@@ -349,8 +349,8 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(50);
-  background-image: url(../img/sesja5.jpeg);
-  background-position: top; }
+  background-image: url(../img/ptak_ziel4.jpg);
+  background-position: center; }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
@@ -394,7 +394,7 @@ body {
   transform: rotate(-135deg); }
 
 .footer {
-  background-image: linear-gradient(to right bottom, rgba(43, 147, 72, 0.6), rgba(85, 166, 48, 0.7), rgba(170, 204, 0, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(43, 147, 72, 0.9), rgba(85, 166, 48, 0.5), rgba(170, 204, 0, 0.5));
   padding: 5rem 0;
   background-size: cover;
   width: 100%;
