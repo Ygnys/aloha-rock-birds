@@ -2,10 +2,9 @@
 .header {
   height: 70vh;
 
- background-image: linear-gradient(
-    to right bottom,
-rgba(#ffb4a2, .1),
-rgba(#fcd5ce, .1)),
+ background-image: linear-gradient(to right bottom,
+rgba(#2b9348, .2),
+rgba(#55a630, .2)),
 url(../img/cover100.jpg);
   background-size: cover;
   background-position: center; /*no matter viewportsize, top of the image stays on top of the cointainer*/
@@ -32,7 +31,7 @@ url(../img/cover100.jpg);
   // top: 25%;
   // left: 50%; /*in relation to the parent element: header*/
   //transform: translate(-50%, -50%); /*applies to the elemnt itslef*/
-  padding: 5rem;
+  padding: 7rem 5rem;
   text-align: center; /* all the elements (including btn wich is treated as text)
   inside the box are centerd*/
   font-family: 'Comic Neue', cursive;

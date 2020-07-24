@@ -66,6 +66,9 @@ background-color: #ffb4a2 ;
   html {
     font-size: 70%;
  }
+ .header {
+  height: 60vh;
+ }
 }
 
 @media (max-width: 600px) {
@@ -73,13 +76,18 @@ background-color: #ffb4a2 ;
     font-size: 40%;
 
 }
+
+.header {
+  height: 40vh;
+}
 .composition {
   display: none;
 }
 .main-container {
-width: 80%;
+width: 100%;
 margin: 5rem auto;
 }
+
 }
 
 
