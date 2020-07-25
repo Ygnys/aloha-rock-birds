@@ -69,6 +69,7 @@ background-color: #ffb4a2 ;
  .header {
   height: 60vh;
  }
+
 }
 
 @media (max-width: 600px) {
@@ -86,6 +87,10 @@ background-color: #ffb4a2 ;
 .main-container {
 width: 100%;
 margin: 5rem auto;
+}
+
+.heading-tertiary {
+  padding: 1rem 5rem;
 }
 
 }
