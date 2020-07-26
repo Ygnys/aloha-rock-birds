@@ -70,6 +70,9 @@ background-color: #ffb4a2 ;
   height: 60vh;
  }
 
+.composition {
+  display: none;
+}
 }
 
 @media (max-width: 600px) {
@@ -92,7 +95,13 @@ margin: 5rem auto;
 .heading-tertiary {
   padding: 1rem 5rem;
 }
-
+.about__photo {
+   border-radius: 50%;
+    position: absolute;
+        left: -7rem;
+      top: 0rem;
+      height: 15rem;
+}
 }
 
 
