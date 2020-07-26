@@ -44,8 +44,8 @@ body {
   color: rgb(32,32,32);
   box-sizing: border-box; /* margins and padding are not added to the width and hight of the box,
                              but included in the width and height */
-// background-color: #ffb4a2;
-background-color: #ffb4a2 ;
+
+background-image: linear-gradient(to right bottom, #ffb4a2, #ffafbd, #f07167);
 
 }
 
@@ -95,13 +95,7 @@ margin: 5rem auto;
 .heading-tertiary {
   padding: 1rem 5rem;
 }
-.about__photo {
-   border-radius: 50%;
-    position: absolute;
-        left: -7rem;
-      top: 0rem;
-      height: 15rem;
-}
+
 }
 
 

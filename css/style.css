@@ -28,7 +28,7 @@ body {
   box-sizing: border-box;
   /* margins and padding are not added to the width and hight of the box,
                              but included in the width and height */
-  background-color: #ffb4a2; }
+  background-image: linear-gradient(to right bottom, #ffb4a2, #ffafbd, #f07167); }
 
 .main-container {
   width: 100%;
@@ -57,13 +57,7 @@ body {
     width: 100%;
     margin: 5rem auto; }
   .heading-tertiary {
-    padding: 1rem 5rem; }
-  .about__photo {
-    border-radius: 50%;
-    position: absolute;
-    left: -7rem;
-    top: 0rem;
-    height: 15rem; } }
+    padding: 1rem 5rem; } }
 
 .heading-primary {
   color: white;
@@ -95,7 +89,7 @@ body {
   font-size: 2.5rem;
   font-weight: 500;
   padding: 1rem 0;
-  background-color: #ffc1aa;
+  background-image: linear-gradient(to right bottom, #ffc1aa, #ffcdb2);
   padding: 1rem 1rem;
   border-radius: 20px;
   text-align: center; }
@@ -203,7 +197,7 @@ body {
 
 .mySlides img {
   width: 40rem;
-  box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.2);
   border-radius: 4px; }
 
 .cursor {
@@ -231,13 +225,13 @@ body {
 
 .caption-container {
   text-align: center;
-  background-color: rgba(99, 106, 127, 0.8);
+  background-color: #ffc1aa;
   padding: 0px 16px;
-  color: white;
+  color: #636a7f;
+  font-weight: bold;
   width: 40rem;
   margin: 1rem auto;
   border-radius: 4px;
-  font-family: "Lato", sans-serif;
   font-size: 1.5rem;
   letter-spacing: .1rem; }
 
@@ -416,7 +410,7 @@ body {
   transform: rotate(-135deg); }
 
 .footer {
-  background-image: linear-gradient(to right bottom, #ffc1aa, rgba(255, 193, 170, 0.9));
+  background-image: linear-gradient(to right bottom, rgba(43, 147, 72, 0.6), rgba(85, 166, 48, 0.4), rgba(170, 204, 0, 0.3));
   padding: 5rem 0;
   background-size: cover;
   position: relative; }
