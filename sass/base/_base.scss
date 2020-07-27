@@ -11,6 +11,8 @@ html{
   /*font-size: 100%; if the user doesn't change anything is 16px*/
   font-size: 70.5%; /*11.5px*/
 
+
+
   // @include respond(phone) {
   //   font-size: 50%
 
@@ -46,7 +48,7 @@ body {
                              but included in the width and height */
 
 background-image: linear-gradient(to right bottom, #ffb4a2, #ffafbd, #f07167);
-
+background-attachment: fixed;
 }
 
 .main-container {

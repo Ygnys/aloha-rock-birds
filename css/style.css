@@ -28,7 +28,8 @@ body {
   box-sizing: border-box;
   /* margins and padding are not added to the width and hight of the box,
                              but included in the width and height */
-  background-image: linear-gradient(to right bottom, #ffb4a2, #ffafbd, #f07167); }
+  background-image: linear-gradient(to right bottom, #ffb4a2, #ffafbd, #f07167);
+  background-attachment: fixed; }
 
 .main-container {
   width: 100%;
@@ -85,14 +86,12 @@ body {
   animation-timing-function: ease-out;*/ }
 
 .heading-tertiary {
-  margin: 5rem 0rem 1rem 5rem;
+  margin: 5rem 0rem 0rem 5rem;
   font-size: 2.5rem;
   font-weight: 500;
   padding: 1rem 0;
-  background-image: linear-gradient(to right bottom, #ffc1aa, #ffcdb2);
   padding: 1rem 1rem;
-  border-radius: 20px;
-  text-align: center; }
+  border-radius: 20px; }
 
 .second {
   margin-top: 5rem; }
@@ -121,7 +120,7 @@ body {
 
 .header {
   height: 70vh;
-  background-image: linear-gradient(to right bottom, rgba(99, 106, 127, 0.1), rgba(99, 106, 127, 0.1)), url(../img/IMG_3010-min.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 180, 162, 0.2), rgba(255, 175, 189, 0.2), rgba(240, 113, 103, 0.2)), url(../img/cover100-min.jpg);
   background-size: cover;
   background-position: center;
   /*no matter viewportsize, top of the image stays on top of the cointainer*/
@@ -139,7 +138,7 @@ body {
     margin: 1rem;
     opacity: 0.6; }
   .header__text-box {
-    padding: 15rem 10rem;
+    padding: 5rem 10rem;
     text-align: center;
     /* all the elements (including btn wich is treated as text)
   inside the box are centerd*/
@@ -259,13 +258,10 @@ body {
   .about__photo {
     border-radius: 50%;
     position: absolute;
-    left: 0rem;
+    left: -5rem;
     top: 0rem;
-    height: 15rem; }
-  .about:hover {
-    transform: scale(2);
-    box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.5);
-    top: -10rem; }
+    height: 15rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(128, 128, 128, 0.2); }
 
 .row {
   max-width: 114rem;

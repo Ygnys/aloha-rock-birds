@@ -2,10 +2,12 @@
 .header {
   height: 70vh;
 
- background-image: linear-gradient(to right bottom,
-rgba(#636a7f, .1),
-rgba(#636a7f, .1)),
-url(../img/IMG_3010-min.jpg);
+background-image: linear-gradient(to right bottom,
+  rgba(#ffb4a2, .2),
+  rgba(#ffafbd, .2),
+  rgba(#f07167, .2)),
+
+url(../img/cover100-min.jpg);
   background-size: cover;
   background-position: center; /*no matter viewportsize, top of the image stays on top of the cointainer*/
   //clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
@@ -31,7 +33,7 @@ url(../img/IMG_3010-min.jpg);
   // top: 25%;
   // left: 50%; /*in relation to the parent element: header*/
   //transform: translate(-50%, -50%); /*applies to the elemnt itslef*/
-  padding: 15rem 10rem;
+  padding: 5rem 10rem;
   text-align: center; /* all the elements (including btn wich is treated as text)
   inside the box are centerd*/
   font-family: 'Comic Neue', cursive;
