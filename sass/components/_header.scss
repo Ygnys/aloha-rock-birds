@@ -7,15 +7,14 @@ rgba(#f9d1b7, .1),
   rgba(#f894a4, .1)
 ),
 
-url(../img/stado.jpg);
+url(../img/cover100-min.jpg);
   background-size: cover;
-  background-position: top; /*no matter viewportsize, top of the image stays on top of the cointainer*/
-  //clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
-  position: relative; /* parent elemnent to the logo-box, reference point*/
+  background-position: center;
+  position: relative;
 
-  &__logo-box {  /*copies all the code in the header and adds logo-box = nesting*/
-    position: absolute; /* in reference to header*/
-    top: 0%; /* in reference to header*/
+  &__logo-box {
+    position: absolute;
+    top: 0%;
     left: 1%;
   }
 

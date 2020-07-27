@@ -43,8 +43,8 @@ body {
 @media (max-width: 900px) {
   html {
     font-size: 70%; }
-  .header {
-    height: 60vh; }
+  .header .banner {
+    height: 50vh; }
   .composition {
     display: none; } }
 
@@ -52,7 +52,7 @@ body {
   html {
     font-size: 40%; }
   .header {
-    height: 40vh; }
+    height: 50vh; }
   .composition {
     display: none; }
   .main-container {
@@ -93,8 +93,8 @@ body {
   font-size: 2.5rem;
   font-weight: 500;
   padding: 1rem 0;
-  padding: 1rem 1rem;
-  border-radius: 20px; }
+  border-radius: 20px;
+  color: #333845; }
 
 .second {
   margin-top: 5rem; }
@@ -102,7 +102,8 @@ body {
 .paragraph {
   font-size: 2rem;
   letter-spacing: .05rem;
-  margin: 1rem 5rem; }
+  margin: 1rem 5rem;
+  color: #333845; }
 
 .btn:link, .btn:visited {
   padding: 1.5rem 2.5rem;
@@ -123,18 +124,13 @@ body {
 
 .header {
   height: 70vh;
-  background-image: linear-gradient(to right bottom, rgba(249, 209, 183, 0.1), rgba(248, 148, 164, 0.1)), url(../img/stado.jpg);
+  background-image: linear-gradient(to right bottom, rgba(249, 209, 183, 0.1), rgba(248, 148, 164, 0.1)), url(../img/cover100-min.jpg);
   background-size: cover;
-  background-position: top;
-  /*no matter viewportsize, top of the image stays on top of the cointainer*/
-  position: relative;
-  /* parent elemnent to the logo-box, reference point*/ }
+  background-position: center;
+  position: relative; }
   .header__logo-box {
-    /*copies all the code in the header and adds logo-box = nesting*/
     position: absolute;
-    /* in reference to header*/
     top: 0%;
-    /* in reference to header*/
     left: 1%; }
   .header__logo {
     height: 20rem;
@@ -409,8 +405,8 @@ body {
   transform: rotate(-135deg); }
 
 .footer {
-  background-color: #ffcdb2;
-  background-image: linear-gradient(315deg, #ffcdb2 0%, #ffb4a2 74%);
+  background-color: #F9E3CB;
+  background-image: linear-gradient(315deg, #F9E3CB 0%, #F9E3CB 74%);
   padding: 5rem 0;
   background-size: cover;
   position: relative; }
