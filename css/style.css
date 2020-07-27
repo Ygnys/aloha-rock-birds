@@ -28,7 +28,8 @@ body {
   box-sizing: border-box;
   /* margins and padding are not added to the width and hight of the box,
                              but included in the width and height */
-  background-image: linear-gradient(to right bottom, #ffb4a2, #ffafbd, #f07167);
+  background-color: #f9d1b7;
+  background-image: linear-gradient(315deg, #f9d1b7 0%, #f894a4 74%);
   background-attachment: fixed; }
 
 .main-container {
@@ -58,7 +59,9 @@ body {
     width: 100%;
     margin: 5rem auto; }
   .heading-tertiary {
-    padding: 1rem 5rem; } }
+    padding: 1rem 5rem; }
+  .about__photo {
+    height: 15rem; } }
 
 .heading-primary {
   color: white;
@@ -120,9 +123,9 @@ body {
 
 .header {
   height: 70vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 180, 162, 0.2), rgba(255, 175, 189, 0.2), rgba(240, 113, 103, 0.2)), url(../img/cover100-min.jpg);
+  background-image: linear-gradient(to right bottom, rgba(249, 209, 183, 0.1), rgba(248, 148, 164, 0.1)), url(../img/stado.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   /*no matter viewportsize, top of the image stays on top of the cointainer*/
   position: relative;
   /* parent elemnent to the logo-box, reference point*/ }
@@ -406,7 +409,8 @@ body {
   transform: rotate(-135deg); }
 
 .footer {
-  background-image: linear-gradient(to right bottom, rgba(43, 147, 72, 0.6), rgba(85, 166, 48, 0.4), rgba(170, 204, 0, 0.3));
+  background-color: #ffcdb2;
+  background-image: linear-gradient(315deg, #ffcdb2 0%, #ffb4a2 74%);
   padding: 5rem 0;
   background-size: cover;
   position: relative; }

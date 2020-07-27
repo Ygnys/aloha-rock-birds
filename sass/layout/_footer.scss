@@ -6,9 +6,10 @@
 // rgba(#55a630, .5),
 // rgba(#aacc00, .5));
 .footer {
-  background-image: linear-gradient(
- to right bottom,    rgba(#2b9348, .6), rgba(#55a630, .4),
-rgba(#aacc00, .3));
+    background-color: #ffcdb2;
+background-image: linear-gradient(315deg, #ffcdb2 0%, #ffb4a2 74%);
+
+
   padding: 5rem 0;
   background-size: cover;
   position: relative;

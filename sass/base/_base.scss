@@ -47,7 +47,9 @@ body {
   box-sizing: border-box; /* margins and padding are not added to the width and hight of the box,
                              but included in the width and height */
 
-background-image: linear-gradient(to right bottom, #ffb4a2, #ffafbd, #f07167);
+background-color: #f9d1b7;
+background-image: linear-gradient(315deg, #f9d1b7 0%, #f894a4 74%);
+
 background-attachment: fixed;
 }
 
@@ -97,7 +99,9 @@ margin: 5rem auto;
 .heading-tertiary {
   padding: 1rem 5rem;
 }
-
+.about__photo  {
+   height: 15rem;
+}
 }
 
 

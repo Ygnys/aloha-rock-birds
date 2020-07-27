@@ -3,13 +3,13 @@
   height: 70vh;
 
 background-image: linear-gradient(to right bottom,
-  rgba(#ffb4a2, .2),
-  rgba(#ffafbd, .2),
-  rgba(#f07167, .2)),
+rgba(#f9d1b7, .1),
+  rgba(#f894a4, .1)
+),
 
-url(../img/cover100-min.jpg);
+url(../img/stado.jpg);
   background-size: cover;
-  background-position: center; /*no matter viewportsize, top of the image stays on top of the cointainer*/
+  background-position: top; /*no matter viewportsize, top of the image stays on top of the cointainer*/
   //clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
   position: relative; /* parent elemnent to the logo-box, reference point*/
 
