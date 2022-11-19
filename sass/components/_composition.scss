@@ -1,53 +1,25 @@
 
-
 .composition {
-  position: relative;
+position: relative;
 
   &__photo {
 
-    // box-shadow: 0 .1rem .1rem rgba(black, .4rem);
     border-radius: 4px;
     position: absolute;
-    opacity: 1;
-
-    //outline-offset: .5rem;
+        left: 0rem;
+      top: 0rem;
 
 
     &--p1 {
 
-      left: 9rem;
-      top: 24rem;
-      height: 13rem;
+      left: 0rem;
+      top: 4rem;
+      height: 10rem;
       transform: scale(1.7);
-      // box-shadow: 0 1rem 10rem rgba(black, .5rem);
 
     }
 
-    &--p2 {
-
-      left: 22rem;
-      top: 10rem;
-      height: 13rem;
-    }
-
-   &--p3 {
-
-      left: 44rem;
-      top: 10rem;
-      height: 13rem;
-    }
-
-  &:hover {
-    //outline: 0.5rem solid $pink-main;
-    transform: scale(1.7);
-    // box-shadow: 0 1rem 1rem rgb(220,);
-    // top: 18rem;
-    left: 9rem;
-    opacity: 1;
-  }
-}
-&:hover &__photo:not(:hover) {
-  transform: scale(.9);
 }
 }
+
 

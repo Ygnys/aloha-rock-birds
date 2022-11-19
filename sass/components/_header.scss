@@ -2,19 +2,19 @@
 .header {
   height: 70vh;
 
- background-image: linear-gradient(
-    to right bottom,
-rgba(#55a630, .4),
-rgba(#80b918, .5)),
-url(../img/cover4.jpeg);
-  background-size: cover;
-  background-position: center; /*no matter viewportsize, top of the image stays on top of the cointainer*/
-  //clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
-  position: relative; /* parent elemnent to the logo-box, reference point*/
+background-image: linear-gradient(to right bottom,
+rgba(#f9d1b7, .1),
+  rgba(#f894a4, .1)
+),
 
-  &__logo-box {  /*copies all the code in the header and adds logo-box = nesting*/
-    position: absolute; /* in reference to header*/
-    top: 0%; /* in reference to header*/
+url(../img/cover100-min.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  &__logo-box {
+    position: absolute;
+    top: 0%;
     left: 1%;
   }
 
@@ -28,13 +28,15 @@ url(../img/cover4.jpeg);
   }
 
   &__text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%; /*in relation to the parent element: header*/
-  transform: translate(-50%, -50%); /*applies to the elemnt itslef*/
+  // position: absolute;
+  // top: 25%;
+  // left: 50%; /*in relation to the parent element: header*/
+  //transform: translate(-50%, -50%); /*applies to the elemnt itslef*/
+  padding: 5rem 10rem;
   text-align: center; /* all the elements (including btn wich is treated as text)
   inside the box are centerd*/
   font-family: 'Comic Neue', cursive;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2)
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+
 }
 }

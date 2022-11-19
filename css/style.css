@@ -12,13 +12,13 @@ html {
   /* setting the root font size to 10 instead 16 makes calculations easier*/
   /*font-size: 100%; if the user doesn't change anything is 16px*/
   font-size: 70.5%;
-  /*10px*/ }
+  /*11.5px*/ }
 
 body header {
   font-family: 'Comic Neue', cursive; }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Comic Neue', cursive;
   font-weight: 300;
   font-size: 1.5rem;
   /*16px*/
@@ -28,11 +28,40 @@ body {
   box-sizing: border-box;
   /* margins and padding are not added to the width and hight of the box,
                              but included in the width and height */
-  background-color: #fbc4ab; }
+  background-color: #f9d1b7;
+  background-image: linear-gradient(315deg, #f9d1b7 0%, #f894a4 74%);
+  background-attachment: fixed; }
 
-.container {
+.main-container {
   width: 100%;
   margin: 5rem auto; }
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 80.5%; } }
+
+@media (max-width: 900px) {
+  html {
+    font-size: 70%; }
+  .header .banner {
+    height: 50vh; }
+  .composition {
+    display: none; } }
+
+@media (max-width: 600px) {
+  html {
+    font-size: 40%; }
+  .header {
+    height: 50vh; }
+  .composition {
+    display: none; }
+  .main-container {
+    width: 100%;
+    margin: 5rem auto; }
+  .heading-tertiary {
+    padding: 1rem 5rem; }
+  .about__photo {
+    height: 15rem; } }
 
 .heading-primary {
   color: white;
@@ -40,7 +69,7 @@ body {
   backface-visibility: hidden; }
   .heading-primary--main {
     display: inline-block;
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 700;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
@@ -60,14 +89,21 @@ body {
   animation-timing-function: ease-out;*/ }
 
 .heading-tertiary {
-  margin: 10rem 0rem 1rem 0rem; }
+  margin: 5rem 0rem 0rem 5rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding: 1rem 0;
+  border-radius: 20px;
+  color: #333845; }
 
 .second {
   margin-top: 5rem; }
 
 .paragraph {
-  font-size: 1.6rem;
-  letter-spacing: .05rem; }
+  font-size: 2rem;
+  letter-spacing: .05rem;
+  margin: 1rem 5rem;
+  color: #333845; }
 
 .btn:link, .btn:visited {
   padding: 1.5rem 2.5rem;
@@ -88,61 +124,38 @@ body {
 
 .header {
   height: 70vh;
-  background-image: linear-gradient(to right bottom, rgba(85, 166, 48, 0.4), rgba(128, 185, 24, 0.5)), url(../img/cover4.jpeg);
+  background-image: linear-gradient(to right bottom, rgba(249, 209, 183, 0.1), rgba(248, 148, 164, 0.1)), url(../img/cover100-min.jpg);
   background-size: cover;
   background-position: center;
-  /*no matter viewportsize, top of the image stays on top of the cointainer*/
-  position: relative;
-  /* parent elemnent to the logo-box, reference point*/ }
+  position: relative; }
   .header__logo-box {
-    /*copies all the code in the header and adds logo-box = nesting*/
     position: absolute;
-    /* in reference to header*/
     top: 0%;
-    /* in reference to header*/
     left: 1%; }
   .header__logo {
     height: 20rem;
     margin: 1rem;
     opacity: 0.6; }
   .header__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    /*in relation to the parent element: header*/
-    transform: translate(-50%, -50%);
-    /*applies to the elemnt itslef*/
+    padding: 5rem 10rem;
     text-align: center;
     /* all the elements (including btn wich is treated as text)
   inside the box are centerd*/
     font-family: 'Comic Neue', cursive;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9); }
 
 .composition {
   position: relative; }
   .composition__photo {
     border-radius: 4px;
     position: absolute;
-    opacity: 1; }
+    left: 0rem;
+    top: 0rem; }
     .composition__photo--p1 {
-      left: 9rem;
-      top: 24rem;
-      height: 13rem;
+      left: 0rem;
+      top: 4rem;
+      height: 10rem;
       transform: scale(1.7); }
-    .composition__photo--p2 {
-      left: 22rem;
-      top: 10rem;
-      height: 13rem; }
-    .composition__photo--p3 {
-      left: 44rem;
-      top: 10rem;
-      height: 13rem; }
-    .composition__photo:hover {
-      transform: scale(1.7);
-      left: 9rem;
-      opacity: 1; }
-  .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.9); }
 
 .card-product {
   overflow: hidden;
@@ -182,7 +195,7 @@ body {
 
 .mySlides img {
   width: 40rem;
-  box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.2);
   border-radius: 4px; }
 
 .cursor {
@@ -210,13 +223,13 @@ body {
 
 .caption-container {
   text-align: center;
-  background-color: rgba(128, 185, 24, 0.8);
-  padding: 2px 16px;
-  color: white;
+  background-color: #ffc1aa;
+  padding: 0px 16px;
+  color: #636a7f;
+  font-weight: bold;
   width: 40rem;
-  margin: 0 auto;
+  margin: 1rem auto;
   border-radius: 4px;
-  font-family: "Lato", sans-serif;
   font-size: 1.5rem;
   letter-spacing: .1rem; }
 
@@ -231,7 +244,8 @@ body {
 
 .small-pictures {
   opacity: 1;
-  margin-top: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   padding: 1rem; }
 
 .active,
@@ -241,22 +255,18 @@ body {
 .about {
   position: relative; }
   .about__photo {
-    box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.4);
     border-radius: 50%;
     position: absolute;
-    left: 0rem;
-    top: 10rem;
-    height: 15rem; }
-  .about:hover {
-    transform: scale(2);
-    box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.5);
-    top: -10rem; }
+    left: -5rem;
+    top: 0rem;
+    height: 15rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(128, 128, 128, 0.2); }
 
 .row {
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
-    margin-bottom: 6rem; }
+    margin-bottom: 3rem; }
   .row::after {
     content: "";
     display: table;
@@ -264,7 +274,7 @@ body {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 4rem; }
+      margin-right: 3rem; }
   .row .col-1-of-2 {
     width: calc( ( 100% - 4rem) / 2); }
   .row .col-1-of-3 {
@@ -350,8 +360,8 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(50);
-  background-image: url(../img/sesja5.jpeg);
-  background-position: top; }
+  background-image: url(../img/ptak_ziel4.jpg);
+  background-position: center; }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
@@ -395,11 +405,11 @@ body {
   transform: rotate(-135deg); }
 
 .footer {
-  background-image: linear-gradient(to right bottom, rgba(43, 147, 72, 0.6), rgba(85, 166, 48, 0.7), rgba(170, 204, 0, 0.8));
+  background-color: #F9E3CB;
+  background-image: linear-gradient(315deg, #F9E3CB 0%, #F9E3CB 74%);
   padding: 5rem 0;
   background-size: cover;
-  width: 100%;
-  margin: 0; }
+  position: relative; }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 1rem; }
